@@ -25,3 +25,35 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+###
+
+```
+ng new weather-app --style=scss --routing=false
+ng add @angular/material --theme=indigo-pink --typography=true --animations=true
+
+> add the below line in angular.json
+
+./node_modules/@angular/material/prebuilt-themes/indigo-pink.css
+
+> add the below line in index.html
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+```
+
+It adds the following class to the body of the HTML file:
+
+```
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+
+styles.scss:
+============
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+```

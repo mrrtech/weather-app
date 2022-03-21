@@ -1,0 +1,24 @@
+[debug] [2022-03-21T01:57:00.337Z] ----------------------------------------------------------------------
+[debug] [2022-03-21T01:57:00.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rummy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2022-03-21T01:57:00.339Z] CLI Version:   10.4.0
+[debug] [2022-03-21T01:57:00.339Z] Platform:      win32
+[debug] [2022-03-21T01:57:00.339Z] Node Version:  v14.15.3
+[debug] [2022-03-21T01:57:00.341Z] Time:          Sun Mar 20 2022 21:57:00 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-03-21T01:57:00.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-21T01:57:00.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-21T01:57:00.390Z] > authorizing via signed-in user (ramesh.mavuluri.info@gmail.com)
+[debug] [2022-03-21T01:57:00.394Z] > refreshing access token with scopes: []
+[debug] [2022-03-21T01:57:00.394Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-21T01:57:00.542Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 21 Mar 2022 01:57:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-21T01:57:00.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2022-03-21T01:57:00.751Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2022-03-21T01:57:00.751Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-03-21T01:57:00.752Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-03-21T01:57:00.754Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\rummy\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\rummy\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
